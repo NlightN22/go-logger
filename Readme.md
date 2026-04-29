@@ -1,8 +1,8 @@
 # go-logger
 
-Минималистичная обёртка над `zap` с фиксированными стандартами: JSON, RFC3339, вывод в stdout, `caller`, стек с уровня `error`. Единые поля: `service`, `env`, и обязательный `module` при создании логгера.
+Minimal wrapper around `zap` with opinionated defaults: JSON, RFC3339 timestamps, stdout output, `caller`, and stack traces starting at `error` level. Common fields: `service`, `env`, and a required `module` when creating a logger.
 
-## Установка
+## Install
 ```bash
 go get github.com/NlightN22/go-logger@v1
 ```
@@ -14,7 +14,7 @@ go get github.com/NlightN22/go-logger@v1
 package main
 
 import (
-	"github.com/NlightN22/go-logger@v1"
+	"github.com/NlightN22/go-logger"
 )
 
 func main() {
